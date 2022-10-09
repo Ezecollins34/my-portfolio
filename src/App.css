@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("./images/bg2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1640px 1024px;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  color: aquamarine;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px 142px;
+}
+.logo-style {
+  flex: 2;
+}
+.navlinks {
+  display: flex;
+  flex: 1;
+}
+.link {
+  flex: 1;
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.link img {
+  margin-right: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+  margin-top: 60px;
+  /* width: 70%; */
+}
+.section1 {
+  padding: 30px 142px;
+}
+.main-cont {
+  background-image: url(./images/name-frame.png);
+  background-size: 830px 490px;
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 20px;
+  line-height: 23px;
+  width: 60%;
+}
+.main-cont h1 {
+  font-size: 24px;
+}
+.main-cont button {
+  width: 372px;
+  height: 94px;
+  background-color: hsl(0, 0%, 0%, 20%);
+  border: 1px solid aquamarine;
+  color: white;
+  margin-top: 35px;
+  font-size: large;
+}
+.main-cont-bottom {
+  margin-top: 20px;
+  display: flex;
+}
+.skill-info {
+  flex: 2;
+}
+.arrow {
+  flex: 1;
+  margin-top: 5%;
+}
+.tools {
+  flex: 1;
+  margin-top: 10px;
+}
+.section2 {
+  padding-top: 204px;
+  background-color: #141615;
+  display: flex;
+}
+.forimg {
+  flex: 1.5;
+}
+.bigimg {
+  width: 800px;
+  height: 896px;
+}
+.services {
+  flex: 1;
+  margin-top: 40px;
+}
+.toflex {
+  display: flex;
+  width: 80%;
+  margin-top: 70px;
+}
+.toflex img {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
 }
