@@ -7,7 +7,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 span {
-  color: aquamarine;
+  background: linear-gradient(to bottom, #00ff19, rgba(43, 244, 207, 0.2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header {
   display: flex;
@@ -29,35 +31,67 @@ span {
   margin-right: 5px;
 }
 .body {
-  margin-top: 60px;
+  margin-top: 50px;
   /* width: 70%; */
 }
 .section1 {
   padding: 30px 142px;
 }
 .main-cont {
-  background-image: url(./images/name-frame.png);
-  background-size: 830px 490px;
-  background-repeat: no-repeat;
-  padding: 30px;
-  border-radius: 20px;
+  /* padding: 30px; */
   line-height: 23px;
   width: 60%;
 }
-.main-cont h1 {
-  font-size: 24px;
+h1 {
+  font-size: 4vw;
+  color: #091b0c;
+  -webkit-text-stroke: 0.1px #22bd4b;
+  text-transform: uppercase;
+  position: relative;
+}
+h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: white;
+  -webkit-text-stroke: 0px #22bd4b;
+  border-right: 0.3vw solid #22bd4b;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 .main-cont button {
   width: 372px;
   height: 94px;
   background-color: hsl(0, 0%, 0%, 20%);
-  border: 1px solid aquamarine;
+  border: 1px solid #22bd4b;
   color: white;
-  margin-top: 35px;
+  margin-top: 15px;
   font-size: large;
 }
+.btn:hover {
+  cursor: pointer;
+  background-color: #22bd4b;
+  color: #141615;
+  transition: 1s;
+  border-radius: 10px;
+  font-size: larger;
+}
 .main-cont-bottom {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
 }
 .skill-info {
